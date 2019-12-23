@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weather App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <section class="top-banner">
+        <div class="container">
+            <h1 class="heading">Simple Weather App</h1>
+            <form>
+                <input type="text" placeholder="Search for a city" autofocus>
+                <button type="submit">SUBMIT</button>
+                <span class="msg"></span>
+            </form>
+        </div>
+    </section>
+    <section class="ajax-section">
+        <div class="container">
+            <ul class="cities"></ul>
+        </div>
+    </section>
+    <footer class="page-footer">
+    </footer>
+    <script src="Javascript/script.js" async defer></script>
+</body>
+
+</html>
