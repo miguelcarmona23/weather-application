@@ -45,7 +45,7 @@ form.addEventListener("submit", e => {
     }
 
     //ajax here
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${apiKey}&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${apiKey}&units=imperial`;
 
     fetch(url)
         .then(response => response.json())
@@ -62,7 +62,7 @@ form.addEventListener("submit", e => {
           <span>${name}</span>
           <sup>${sys.country}</sup>
         </h2>
-        <div class="city-temp">${Math.round(main.temp)}<sup>°C</sup></div>
+        <div class="city-temp">${Math.round(main.temp)}<sup>°F</sup></div>
         <figure>
           <img class="city-icon" src="${icon}" alt="${
                 weather[0]["description"]
